@@ -82,50 +82,43 @@ context.
 
 \section{Related tools}
 
-Existem duas ferramentas relacionadas com Mezuro. A primeira, o
-SonarQube\footnote{\url{http://www.sonarqube.org/}} é um \textit{software}
-livre, licenciado como LGPLv3, que oferece uma plataforma de gerenciamento de
-qualidade de código. Por meio de \textit{plugins} disponíveis através de uma
-biblioteca\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
-Em sua versão básica ele classifica problemas encontrados no código e calcula
-métricas simples de cobertura de testes e divida técnica em várias linguagens.
-Entretanto, seus melhores \textit{plugins} tem código fechado e pago como, por
-exemplo, o para análise de
-C/C++\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
+There are two tools related to Mezuro. The first, SonarQube\footnote{\url{http://www.sonarqube.org/}}, is a free software licensed as LGPLv3, and offers a platform to manage software quality by using plugins through a 
+library\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
+At its most basic version it classifies code problems and evaluate simple
+coverage metrics and technical debts in several languages. However, its best
+plugins are paid and closed source, such as the
+C/C++ analyzer\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
 
-A segunda, o Code Climate\footnote{\url{https://codeclimate.com/}} é uma
-ferramenta que fornece análise de códigos JavaScript ou Ruby que estejam
-disponíveis em um servidor Git. O \textit{software} procura por ``\textit{code
-smells}'' no programa do usuário e os classifica como mais ou menos
-problemáticos levando em consideração o tamanho dos métodos e duplicação de
-blocos. Conforme os encontra, o programa atribui valores ao código para no
-final determinar uma nota de \textit{A} a \textit{F} com base no somatório dos
-valores encontrados. Note que a análise feita não necessariamente indica um
-problema real, uma vez que aquela pode ter sido a implementação escolhida pelo
-programador.
+The second, Code Climate\footnote{\url{https://codeclimate.com/}}, is a tool
+that analysis source code hosted in a Git server, and has support for several
+programming languages and frameworks. The analysis will look for code smells
+in the code and classify them based on aspects such as size of methods and
+code duplication. Lastly, based on the score of its parts, the project will
+receive a grade between A and F. Keep in mind that what is tagged as an issue
+sometimes is not a real problem, since it could be the best solution for the
+given scenario.
 
-Idealizado como uma plataforma de métricas de código, um dos diferenciais do
-Mezuro reside na possibilidade de gerar informação sobre o código-fonte de
-forma contínua: o usuário decide quando analisar novamente o projeto e
-acompanha detalhadamente a evolução das notas ao longo do tempo. Os resultados
-de cada análise são públicos, o que permite uma maior transparência entre o
-desenvolvedor e a comunidade que utiliza aquele software. Assim, ela
-pode decidir se aquela solução atende ou não às suas necessidades e se deve
-depositar confiança na qualidade do software desenvolvido.
+Mezuro, idealized as a code metrics platform, has the differential to
+continuous generate reviews about the project: the user schedule the
+analysis and follows scores evolution over time. Results of each analysis
+are public, what allows greater transparency between the developer and the
+community that uses the software. Thereby, they decide if the given solution
+meets the requirements and if they should trust in the quality of the software.
 
 \section{The Mezuro project}
 \label{sec:mezuro}
 
-O Mezuro é dividido em duas partes: processamento e cálculo de métricas de
-código-fonte; e a interface gráfica para apresentação dos resultados. Hoje, o
-módulo de processamento de é o Kalibro e o módulo de visualização o Prezento,
-sendo o Mezuro o projeto inteiro, ou seja, o Kalibro integrado com o Prezento.
+Mezuro is composed of two parts: processing and evaluation of source code
+metrics; and a graphic interface to present results. Nowadays, the processing
+module is Kalibro and the visualization Prezento, Mezuro being so the set of
+these projects, that is, Kalibro integrated with Prezento.
 
-Desde a sua primeira implementação em 2010 (REF cbsoft 2012) até a sua
-reescrita completa, a arquitetura do sistema evoluiu até a adoção do estilo
-arquitetural de micro serviços (REF), para  (i) minimizar a quantidade de
-código a ser mantida; (ii) testar e garantir a qualidade do código; (iii)
-modularizar a aplicação em diversos serviços independentes.
+Since its first implementation in 2010 (REF cbsoft 2012) until being completely
+rewritted, the architecture of the system evolved till the adoption of 
+microservice architecture, in order to (i) minimizes the amount of code to
+maintain;
+(ii) test and grant quality of code;
+(iii) modularize the application in several independent services.
 
 \begin{figure}[H]
   \centering
