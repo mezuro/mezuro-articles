@@ -56,12 +56,21 @@ métricas de código.
 \section{Introduction}
 \label{sec:intro}
 
-Métricas de código-fonte estático são medidas extraídas a partir das análises
-léxica e sintática deste sem compilá-lo ou executá-lo e podem ser primitivas ou
-compostas, ou seja, formadas pela composição de uma ou mais métricas
-primitivas. Sua principal função é fornecer informações sobre complexidade,
-compreensão, testabilidade, manutenibilidade e evolução do
-código (REF).
+Static source code metrics are measures extracted from code without compiling
+or nunning it. These metrics can be primitive or composed, and have as main
+role the function to provide information about complexity, compreension,
+testability, maintainability and evolution of code.
+
+Metrics can be simple such as lines of code and number of methods per class or
+complex as afferent connections of a class. Nowadays, several tools can be
+used to extract metrics, such as
+pylint\footnote{\url{http://www.pylint.org/}} (Python),
+metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
+Analizo\footnote{\url{http://www.analizo.org/}} (C/C++ and Java), each one with
+different levels of usability, definitions and set of metrics, being necessary
+the creation of a platform that brings and present these results to the end
+user.
+
 
 Exemplos de métricas podem ser simples como linhas de código e quantidade de
 métodos por classe ou complexas como conexões aferentes de uma classe.  Hoje
