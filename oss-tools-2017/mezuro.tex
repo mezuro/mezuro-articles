@@ -33,23 +33,22 @@
 with its source code quality.
   % Problema
   However, its analysis has issues like, for instance, definition of what
-metrics to use, and measure results interpretation. Besides that, this practice
+metrics to use, and interpretation of measure results. Besides that, this practice
 is still not common in developer environments. Another problem is the lack of
-free tools that integrate metrics collectors to different programming languages.
+free tools that integrate metric collectors to different programming languages.
   % Soluções propostas
 In this work we present Mezuro, a free web platform to collaboratively evaluate
-source code. The platform provides ways to compare projects and share knowledge
+source code. The project provides ways to compare projects and share knowledge
 about metrics, teaching how to configure and interpret them. The platform was
-planned to integrate multiple metric collectors from different programming
-languages, and, currently, the tool allows analysis of source code writted in
-C, C++, Java and Ruby.
+planned to integrate multiple metric collectors for several programming
+languages, and, currently, allows analysis of source code writted in C, C++,
+Java, and Ruby.
   % Frase de impacto
-    With this project, we expect to spread knowledge and encourage the use of
+    With this project we expect to spread knowledge and encourage the use of
 code metrics.
 
 \textbf{Keywords:} static analysis, code metrics, free software.
 \end{abstract}
-
 
 \section{Introduction}
 \label{sec:intro}
@@ -57,7 +56,7 @@ code metrics.
 Static source code metrics are measures extracted from code without compiling
 or nunning it. These metrics can be primitive or composed, and have as main
 role the function to provide information about complexity, compreension,
-testability, maintainability and evolution of code.
+testability, maintainability and evolution of code (REF).
 
 Metrics can be simple such as lines of code and number of methods per class or
 complex as afferent connections of a class. Nowadays, several tools can be
@@ -91,10 +90,10 @@ The second, Code Climate\footnote{\url{https://codeclimate.com/}}, is a tool
 that analysis source code hosted in a Git server, and has support for several
 programming languages and frameworks. The analysis will look for code smells
 in the code and classify them based on aspects such as size of methods and
-code duplication. Lastly, based on the score of its parts, the project will
-receive a grade between A and F. Keep in mind that what is tagged as an issue
-sometimes is not a real problem, since it could be the best solution for the
-given scenario.
+code duplication. Lastly, based on the score of its parts, the given project
+will receive a grade between A and F. Keep in mind that what is tagged as an
+issue sometimes is not a real problem, since it could be the best solution for
+the given scenario.
 
 Mezuro, idealized as a code metrics platform, has the differential to
 continuous generate reviews about the project: the user schedule the
@@ -112,7 +111,7 @@ module is Kalibro and the visualization Prezento, Mezuro being so the set of
 these projects, that is, Kalibro integrated with Prezento.
 
 Since its first implementation in 2010 (REF cbsoft 2012) until being completely
-rewritted, the architecture of the system evolved till the adoption of 
+rewritted, the architecture of the system evolved till the adoption of the
 microservice architecture, in order to (i) minimizes the amount of code to
 maintain;
 (ii) test and grant quality of code;
@@ -120,7 +119,7 @@ maintain;
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{images/mezuro-architecture-predicted.png}
+    \includegraphics[width=\textwidth]{images/mezuro-architecturev2.png}
   \caption{Current architecture of the system.}
   \label{fig:architecture-2}
 \end{figure}
@@ -137,7 +136,7 @@ Mezuro features can be divided in two groups:
     \item Project
 
     \begin{itemize}
-        \item Download of source code via repositories (Git, Subversion, Bazaar etc) or using compressed files;
+        \item Download of source code via repositories (Git, Subversion, Bazaar etc) or via compressed file;
         \item Scheduling of code processing (1 day, 2 days, weekly, biweekly, and monthly);
         \item Definition of what metric configuration should be used for each file;
         \item Graphical analysis of each file via dotted plot with scores over time;
