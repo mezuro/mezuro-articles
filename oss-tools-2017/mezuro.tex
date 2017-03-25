@@ -10,6 +10,7 @@
 \usepackage{tabularx}
 \usepackage{cite}
 \usepackage{hyperref}
+\usepackage{subcaption}
 
 \begin{document}
 \sloppy
@@ -151,6 +152,23 @@ Mezuro features can be divided in two groups:
         \item Combination of native metrics to create composed and more complex analysis.
     \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[width=.9\linewidth]{images/mezuro-feature1.png}
+        % \caption{Feature 1}
+        \captionof{figure}{Code analysis feature.}
+        \label{fig:feature-1}
+    \end{minipage}%
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[width=.9\linewidth]{images/mezuro-feature2.png}
+        \captionof{figure}{Configuration creation feature.}
+        \label{fig:feature-2}
+    \end{minipage}
+\end{figure}
 
 %TODO Dylan: Adicionar duas imagens do Mezuro, a lado a lado
 
