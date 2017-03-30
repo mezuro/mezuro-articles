@@ -61,8 +61,8 @@ or running it. These metrics can be primitive or composed, and have as main
 role the function to provide information about complexity, comprehension,
 testability, maintainability and evolution of code (REF).
 
-Metrics can be simple such as lines of code and number of methods per class or
-complex as afferent connections of a class. Nowadays, several tools can be
+Metrics can be simple, such as lines of code and number of methods per class, or
+complex as class afferent connections. Nowadays, several tools can be
 used to extract metrics, such as
 pylint\footnote{\url{http://www.pylint.org/}} (Python),
 metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
@@ -73,12 +73,11 @@ user, specially in tracking the software during its life cycle.
 
 Code metric tools, in general, do not present a friendly interface, and,
 even more, do not follow a standard. Therefore, this work present the
-Mezuro platform, which (i) has an interface that groups available tools;
-(ii) allow selection and composition of metrics in a flexible manner;
-(iii) preserves the evolution log;
+Mezuro platform, which (i) provides an single interface grouping available tools;
+(ii) allows selection and composition of metrics in a flexible manner;
+(iii) preserves the evolution history;
 (iv) presents results in a friendly way;
-(v) allow the user to create interpretation parameters based on the given
-context.
+(v) allows users to customize the given interpretation accordingly to their own context.
 
 \section{Related tools}
 
