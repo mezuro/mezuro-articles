@@ -22,7 +22,7 @@
 
 \institute{Faculdade do Gama -- Universidade de Brasília (UnB)\\
   Área Especial de Indústria Projeção A -- Setor Leste -- Gama -- DF -- Brazil \\
-  \email{djmgguedes@gmail.com,paulormm@unb.br}
+  \email{120115727@aluno.unb.br,paulormm@unb.br}
   \and
   Instituto de Matemática e Estatística -- Universidade de São Paulo (USP)\\
   Rua do Matão, 1010 -- 05508-090 -- Cidade Universitária -- São Paulo -- SP -- Brasil\\
@@ -35,7 +35,7 @@
 with its source code quality.
   % Problema
   However, its analysis has issues like, for instance, the definition of which
-metrics to use and how to interpret the measured results. Further more, this practice
+metrics to use and how to interpret the measured results. Furthermore, this practice
 is still not common on industry development workflow. Those who decide to employ
 source code analysis lack free software alternatives that integrate multiple languages
 and tools.
@@ -50,23 +50,22 @@ Java, Ruby, PHP, and Python.
     With this project we expect to spread knowledge and encourage the use of
 code metrics by the free software developer community.
 
-\textbf{Keywords:} static analysis, source code metrics, free/open source software.
+\textbf{Keywords:} static analysis, source code metrics, open source software.
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
 
 Static source code metrics are measures extracted from the code without compiling
-or running it. These metrics can be primitive or composed, and have as main
-role the function to provide information about complexity, comprehension,
-testability, maintainability and evolution of code (REF).
+or running it. For example, these metrics provide information about complexity, comprehension,
+testability, maintainability, and evolution of code \cite{mills1988}. Source code metrics can help software engineers to
+observe and determine source code quality, supporting the development of clean code (i.e., clear, flexible, and simple) as well\cite{martin2008}.
 
-Metrics can be simple, such as lines of code and number of methods per class, or
-complex as class afferent connections. Nowadays, several tools can be
-used to extract metrics, such as
+Nowadays, several tools can be
+used to extract source code metrics, such as
 pylint\footnote{\url{http://www.pylint.org/}} (Python),
 metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
-Analizo\footnote{\url{http://www.analizo.org/}} (C/C++ and Java), each one with
+Analizo (C/C++ and Java)\cite{terceiro2010analizo}, each one with
 different levels of usability, definitions and set of metrics, being necessary
 the creation of a platform that brings and present these results to the end
 user, specially in tracking the software during its life cycle.
@@ -81,7 +80,7 @@ Mezuro platform, which (i) provides an single interface grouping available tools
 
 \section{Related tools}
 
-There are two tools related to Mezuro. The first, SonarQube\footnote{\url{http://www.sonarqube.org/}}, is a free software licensed as LGPLv3, and offers a platform to manage software quality by using plugins through a 
+There are two tools related to Mezuro. The first, SonarQube\footnote{\url{http://www.sonarqube.org/}}, is a FOSS software licensed as LGPLv3, and offers a platform to manage software quality by using plugins through a 
 library\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
 At its most basic version it classifies code problems and evaluate simple
 coverage metrics and technical debts in several languages. However, its best
@@ -113,13 +112,13 @@ present results. Nowadays, the processing module is Kalibro and the visualizatio
 Prezento, Mezuro being so the set of these projects, that is, Kalibro integrated
 with Prezento.
 
-Since its first implementation in 2010 (REF cbsoft 2012) until being completely
-rewritten, the architecture of the system evolved adopting the microservice architecture,
-in order to (i) minimize the amount of code to maintain;
+Since its first implementation in 2010\cite{mezuro2012}, until being completely
+rewritten, the architecture of the system evolved adopting the microservice architecture\cite{namiot2014micro},
+to (i) minimize the amount of code to maintain;
 (ii) test and grant quality of code;
 (iii) modularize the application in several independent services.
 
-\begin{figure}[H]
+\begin{figure}[hbt]
   \centering
     \includegraphics[width=\textwidth]{images/mezuro-architecturev2.png}
   \caption{Current architecture of the system.}
