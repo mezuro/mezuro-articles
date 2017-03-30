@@ -107,15 +107,15 @@ meets the requirements and if they should trust in the quality of the software.
 \section{The Mezuro project}
 \label{sec:mezuro}
 
-Mezuro is composed of two parts: processing and evaluation of source code
-metrics; and a graphic interface to present results. Nowadays, the processing
-module is Kalibro and the visualization Prezento, Mezuro being so the set of
-these projects, that is, Kalibro integrated with Prezento.
+Mezuro is composed of three parts: the configuration prior to the analysis beginning;
+processing and evaluation of source code metrics; and a graphic interface to
+present results. Nowadays, the processing module is Kalibro and the visualization
+Prezento, Mezuro being so the set of these projects, that is, Kalibro integrated
+with Prezento.
 
 Since its first implementation in 2010 (REF cbsoft 2012) until being completely
-rewritted, the architecture of the system evolved till the adoption of the
-microservice architecture, in order to (i) minimizes the amount of code to
-maintain;
+rewritten, the architecture of the system evolved adopting the microservice architecture,
+in order to (i) minimize the amount of code to maintain;
 (ii) test and grant quality of code;
 (iii) modularize the application in several independent services.
 
@@ -128,7 +128,7 @@ maintain;
 
 %TODO Dylan: Possivelmente essa figura não é mais do estado atual - ver com o Manzo e Diego.
 
-The current Mezuro state is specified at Figure \ref{fig:architecture-2}. Ellipses represents
+The current Mezuro state is specified on Figure \ref{fig:architecture-2}. Ellipses represents
 softwares involved and parallelograms the communication interfaces between them. At Mezuro's
 base we have Kalibro, segmented in three smaller entities (...).
 
@@ -182,11 +182,11 @@ to the success of their projects.
 
 \section{Final remarks}
 
-Mezuro arise as a potential answer to the lack of tracking and standardization
+Mezuro architecture evolution is an answer to the lack of tracking and standardization
 of source code and the necessity to evaluate it, while being free software,
-highly costumizable, with support to many programming languages, disposing of
-a friendly interface, providing processing log and also with an extensible
-architecture planned to easily embody new features.
+highly customizable, with support to many programming languages, providing
+a friendly interface, for processing history and also with an extensible
+architecture planned to easily embodying of new features by the FOSS community.
 
 %TODO Paulo: mais coisas ...
 
