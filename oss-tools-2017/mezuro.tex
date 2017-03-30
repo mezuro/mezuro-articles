@@ -16,16 +16,17 @@
 \sloppy
 \title{Mezuro: Understading source code metrics}
 
-\author{Rafael Manzo\inst{1}, Diego Camarinha\inst{1},
-        Dylan Guedes\inst{1}, Paulo Meirelles\inst{1,2}}
+\author{Dylan Guedes\inst{1}, Paulo Meirelles\inst{1,2},
+        Rafael Manzo\inst{2}, Diego Camarinha\inst{2}}
 
-\institute{Instituto de Matemática e Estatística -- Universidade de São Paulo (USP)\\
-  Rua do Matão, 1010 -- 05508-090 -- Cidade Universitária -- São Paulo -- SP -- Brasil\\
-  \email{\{diegoamc,manzo\}@ime.usp.br}
+
+\institute{Faculdade do Gama -- Universidade de Brasília (UnB)\\
+  Área Especial de Indústria Projeção A -- Setor Leste -- Gama -- DF -- Brazil \\
+  \email{djmgguedes@gmail.com,paulormm@unb.br}
   \and
-  Faculdade do Gama -- Universidade de Brasília (UnB)\\
-  Gama -- DF -- Brasil\\
-  \email{djmgguedes@gmail.com,paulormm@unb.br}}
+  Instituto de Matemática e Estatística -- Universidade de São Paulo (USP)\\
+  Rua do Matão, 1010 -- 05508-090 -- Cidade Universitária -- São Paulo -- SP -- Brasil\\
+  \email{\{paulormm,manzo,diegoamc\}@ime.usp.br}}
 
 \maketitle
 \begin{abstract}
@@ -33,21 +34,21 @@
   The ease of development and maintenance of a software is directly related
 with its source code quality.
   % Problema
-  However, its analysis has issues like, for instance, definition of what
-metrics to use, and interpretation of measure results. Besides that, this
-practice is still not common in developer environments. Another problem is the
-lack of Free/Open Source (FOSS) tools that integrate metric collectors to
-different programming languages.
-  % Soluções propostas
-In this work, we present Mezuro, a FOSS web-based platform to collaboratively
-evaluate source code. The project provides ways to compare projects and share
-knowledge about metrics, teaching how to configure and interpret them. The
-platform was planned to integrate multiple metric collectors for several
-programming languages, and, currently, allows analysis of source code writted
-in C, C++, Java, Ruby, Python, and PHP.
+  However, its analysis has issues like, for instance, the definition of which
+metrics to use and how to interpret the measured results. Further more, this practice
+is still not common on industry development workflow. Those who decide to employ
+source code analysis lack free software alternatives that integrate multiple languages
+and tools.
+% Soluções propostas
+In this work we present Mezuro: a FOSS web-based platform to collaboratively analyze
+source code. The project provides ways to compare projects and share knowledge
+about metrics, teaching how to configure and interpret them. The platform was
+planned to integrate multiple metric collectors for several programming
+languages, and, currently, allows analysis of source code written in C, C++,
+Java, Ruby, PHP, and Python.
   % Frase de impacto
     With this project we expect to spread knowledge and encourage the use of
-code metrics.
+code metrics by the free software developer community.
 
 \textbf{Keywords:} static analysis, source code metrics, free/open source software.
 \end{abstract}
@@ -55,13 +56,13 @@ code metrics.
 \section{Introduction}
 \label{sec:intro}
 
-Static source code metrics are measured extracted from code without compiling
-or nunning it. These metrics can be primitive or composed, and have as main
-role the function to provide information about complexity, compreension,
+Static source code metrics are measures extracted from the code without compiling
+or running it. These metrics can be primitive or composed, and have as main
+role the function to provide information about complexity, comprehension,
 testability, maintainability and evolution of code (REF).
 
-Metrics can be simple such as lines of code and number of methods per class or
-complex as afferent connections of a class. Nowadays, several tools can be
+Metrics can be simple, such as lines of code and number of methods per class, or
+complex as class afferent connections. Nowadays, several tools can be
 used to extract metrics, such as
 pylint\footnote{\url{http://www.pylint.org/}} (Python),
 metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
@@ -72,12 +73,11 @@ user, specially in tracking the software during its life cycle.
 
 Code metric tools, in general, do not present a friendly interface, and,
 even more, do not follow a standard. Therefore, this work present the
-Mezuro platform, which (i) has an interface that groups available tools;
-(ii) allow selection and composition of metrics in a flexible manner;
-(iii) preserves the evolution log;
+Mezuro platform, which (i) provides an single interface grouping available tools;
+(ii) allows selection and composition of metrics in a flexible manner;
+(iii) preserves the evolution history;
 (iv) presents results in a friendly way;
-(v) allow the user to create interpretation parameters based on the given
-context.
+(v) allows users to customize the given interpretation accordingly to their own context.
 
 \section{Related tools}
 
@@ -107,15 +107,15 @@ meets the requirements and if they should trust in the quality of the software.
 \section{The Mezuro project}
 \label{sec:mezuro}
 
-Mezuro is composed of two parts: processing and evaluation of source code
-metrics; and a graphic interface to present results. Nowadays, the processing
-module is Kalibro and the visualization Prezento, Mezuro being so the set of
-these projects, that is, Kalibro integrated with Prezento.
+Mezuro is composed of three parts: the configuration prior to the analysis beginning;
+processing and evaluation of source code metrics; and a graphic interface to
+present results. Nowadays, the processing module is Kalibro and the visualization
+Prezento, Mezuro being so the set of these projects, that is, Kalibro integrated
+with Prezento.
 
 Since its first implementation in 2010 (REF cbsoft 2012) until being completely
-rewritted, the architecture of the system evolved till the adoption of the
-microservice architecture, in order to (i) minimizes the amount of code to
-maintain;
+rewritten, the architecture of the system evolved adopting the microservice architecture,
+in order to (i) minimize the amount of code to maintain;
 (ii) test and grant quality of code;
 (iii) modularize the application in several independent services.
 
@@ -128,7 +128,7 @@ maintain;
 
 %TODO Dylan: Possivelmente essa figura não é mais do estado atual - ver com o Manzo e Diego.
 
-The current Mezuro state is specified at Figure \ref{fig:architecture-2}. Ellipses represents
+The current Mezuro state is specified on Figure \ref{fig:architecture-2}. Ellipses represents
 softwares involved and parallelograms the communication interfaces between them. At Mezuro's
 base we have Kalibro, segmented in three smaller entities (...).
 
@@ -182,11 +182,11 @@ to the success of their projects.
 
 \section{Final remarks}
 
-Mezuro arise as a potential answer to the lack of tracking and standardization
+Mezuro architecture evolution is an answer to the lack of tracking and standardization
 of source code and the necessity to evaluate it, while being free software,
-highly costumizable, with support to many programming languages, disposing of
-a friendly interface, providing processing log and also with an extensible
-architecture planned to easily embody new features.
+highly customizable, with support to many programming languages, providing
+a friendly interface, for processing history and also with an extensible
+architecture planned to easily embodying of new features by the FOSS community.
 
 %TODO Paulo: mais coisas ...
 

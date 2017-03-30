@@ -11,3 +11,5 @@
 *.lof
 *.idx
 *~
+*.fdb_latexmk
+*.fls
