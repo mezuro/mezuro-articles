@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="600"
+   viewBox="0 0 264.58333 158.75"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="mezuro-architecture-blackwhite.svg"
+   inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+   inkscape:export-xdpi="113.45"
+   inkscape:export-ydpi="113.45">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker14915"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path14913"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker12247"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path12245"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11330"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path11328" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker10343"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path10341"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5414"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5412" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5266"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5264" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5143"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5141" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5079"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5077" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4665"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5079-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5077-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5143-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5141-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5414-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5412-5" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5079-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5077-0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5143-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5141-3" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11330-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path11328-7" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="385.74657"
+     inkscape:cy="281.5661"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="1366"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     units="px"
+     showguides="false"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-object-midpoints="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-138.24998)">
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.73044205;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4504"
+       cx="203.42992"
+       cy="237.42421"
+       rx="32.101311"
+       ry="9.5170364"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.73044205;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4504-3"
+       cx="48.982239"
+       cy="236.82309"
+       rx="32.101311"
+       ry="9.5170364"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.73044205;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4504-5"
+       cx="132.29582"
+       cy="159.366"
+       rx="32.101311"
+       ry="9.5170364"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65797991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4590"
+       width="55.814011"
+       height="16.914726"
+       x="225.54546"
+       y="211.34395"
+       transform="matrix(1,0,-0.38774758,0.9217656,0,0)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4623"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,155.38057,217.00239)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4625"
+         style="font-size:21.33333397px"><rect
+           id="rect4627"
+           width="203.04066"
+           height="36.365486"
+           x="96.974648"
+           y="68.65976"
+           style="font-size:21.33333397px" /></flowRegion><flowPara
+         id="flowPara4629">Kalibro Processor</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4623-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-7.5401888,215.45403)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4625-2"
+         style="font-size:21.33333397px"><rect
+           id="rect4627-7"
+           width="247.48738"
+           height="35.355335"
+           x="96.974648"
+           y="68.65976"
+           style="font-size:21.33333397px" /></flowRegion><flowPara
+         id="flowPara4629-0">Kalibro Configurations</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4655"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,50.834931,180.25425)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4657"><rect
+           id="rect4659"
+           width="186.162"
+           height="58.9282"
+           x="374.11456"
+           y="71.01545" /></flowRegion><flowPara
+         id="flowPara4661"
+         style="font-size:21.33333397px">Kalibro Client</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.35544518px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5079);marker-end:url(#marker5143);marker-start:url(#marker14915)"
+       d="m 164.95191,210.39702 20.2852,18.63711"
+       id="path5069"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4623-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,117.47729,146.71056)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4625-3"
+         style="font-size:21.33333397px"><rect
+           id="rect4627-6"
+           width="219.20316"
+           height="71.720818"
+           x="12.121834"
+           y="38.355183"
+           style="font-size:21.33333397px" /></flowRegion><flowPara
+         id="flowPara4629-06">Prezento</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.37745768px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker10343)"
+       d="M 73.816011,230.44163 95.706836,211.01138"
+       id="path5069-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.35480624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5414);marker-end:url(#marker12247)"
+       d="M 168.21166,194.14156 149.9288,168.08262"
+       id="path4663-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65797991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4590-5"
+       width="55.814011"
+       height="16.914726"
+       x="156.58479"
+       y="212.02313"
+       transform="matrix(1,0,-0.38774759,0.92176559,0,0)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3902778;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5414-3)"
+       d="M 99.088906,194.90645 120.89727,168.47367"
+       id="path4663-7-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4655-2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-18.887264,180.3044)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4657-9"><rect
+           id="rect4659-1"
+           width="186.162"
+           height="58.9282"
+           x="374.11456"
+           y="71.01545" /></flowRegion><flowPara
+         id="flowPara4661-2"
+         style="font-size:21.33333397px">Kalibro Client</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65797991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4590-0"
+       width="55.814011"
+       height="16.914726"
+       x="197.48347"
+       y="248.85893"
+       transform="matrix(1,0,-0.38774759,0.92176559,0,0)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3178907px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker11330)"
+       d="m 154.15633,236.78439 17.16881,-0.13364 v 0"
+       id="path11320"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4655-6"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:25px;font-family:Mingzat;-inkscape-font-specification:Mingzat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,9.0538122,215.55178)"
+       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45"><flowRegion
+         id="flowRegion4657-2"><rect
+           id="rect4659-6"
+           width="186.162"
+           height="58.9282"
+           x="374.11456"
+           y="71.01545" /></flowRegion><flowPara
+         id="flowPara4661-1"
+         style="font-size:21.33333397px">Kalibro Client</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25542843px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker11330-8)"
+       d="m 81.085108,236.49079 16.946152,0.15014 v 0"
+       id="path11320-9"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
