@@ -273,7 +273,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -289,7 +289,7 @@
        cy="237.42421"
        rx="32.101311"
        ry="9.5170364"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"
        d="m 235.53123,237.42421 c 0,5.25611 -14.37225,9.51704 -32.10131,9.51704 -17.72907,0 -32.10131,-4.26093 -32.10131,-9.51704 0,-5.25611 14.37224,-9.51704 32.10131,-9.51704 17.72906,0 32.10131,4.26093 32.10131,9.51704 z"
@@ -305,7 +305,7 @@
        cy="236.82309"
        rx="32.101311"
        ry="9.5170364"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"
        d="m 81.083549,236.82309 c 0,5.25611 -14.372246,9.51704 -32.10131,9.51704 -17.729065,0 -32.101311,-4.26093 -32.101311,-9.51704 0,-5.25611 14.372246,-9.51704 32.101311,-9.51704 17.729064,0 32.10131,4.26093 32.10131,9.51704 z" />
@@ -316,7 +316,7 @@
        cy="159.366"
        rx="32.101311"
        ry="9.5170364"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"
        d="m 164.39713,159.366 c 0,5.25611 -14.37224,9.51703 -32.10131,9.51703 -17.72906,0 -32.10131,-4.26092 -32.10131,-9.51703 0,-5.25612 14.37225,-9.51704 32.10131,-9.51704 17.72907,0 32.10131,4.26092 32.10131,9.51704 z"
@@ -330,7 +330,7 @@
        id="flowRoot4623"
        style="font-size:21.33333397px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:25px;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Mingzat;-inkscape-font-specification:Mingzat"
        transform="matrix(0.26458333,0,0,0.26458333,149.03053,215.41488)"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"><flowRegion
          id="flowRegion4625"
@@ -347,7 +347,7 @@
        id="flowRoot4623-1"
        style="font-size:21.33333397px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:25px;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Mingzat;-inkscape-font-specification:Mingzat"
        transform="matrix(0.26458333,0,0,0.26458333,-6.4818554,214.92486)"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"><flowRegion
          id="flowRegion4625-2"
@@ -364,7 +364,7 @@
        id="flowRoot4623-9"
        style="font-size:21.33333397px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:25px;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Mingzat;-inkscape-font-specification:Mingzat"
        transform="matrix(0.26458333,0,0,0.26458333,114.83144,151.47309)"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45"><flowRegion
          id="flowRegion4625-3"
@@ -382,7 +382,7 @@
        id="path5069-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45" />
     <path
@@ -391,12 +391,15 @@
        id="path4663-7-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45" />
     <g
        id="g3051"
-       transform="matrix(0.71712994,0,0,0.71712994,23.067769,54.666148)">
+       transform="matrix(0.71712994,0,0,0.71712994,23.067769,54.666148)"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45">
       <g
          id="g3048">
         <rect
@@ -432,15 +435,24 @@
        d="m 145.59666,236.78439 18.84927,-0.13364 v 0"
        id="path11320"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.30367842px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker11330-8)"
        d="m 81.085108,236.49079 23.953032,0.15014 v 0"
        id="path11320-9"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45" />
     <g
        id="g3051-3"
-       transform="matrix(0.71712995,0,0,0.71712995,87.48882,54.683787)">
+       transform="matrix(0.71712995,0,0,0.71712995,87.48882,54.683787)"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45">
       <g
          id="g3048-6">
         <rect
@@ -473,7 +485,10 @@
            id="flowPara4661-2-6">Kalibro Client</flowPara></flowRoot>    </g>
     <g
        id="g3051-2"
-       transform="matrix(0.71712995,0,0,0.71712995,53.886737,91.196287)">
+       transform="matrix(0.71712995,0,0,0.71712995,53.886737,91.196287)"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
+       inkscape:export-xdpi="113.45"
+       inkscape:export-ydpi="113.45">
       <g
          id="g3048-9">
         <rect
@@ -510,7 +525,7 @@
        id="path4663-7-6-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45" />
     <path
@@ -519,7 +534,7 @@
        id="path4663-7-6-0-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/dguedes/mezuro-architecturev2.png"
+       inkscape:export-filename="/home/paulormm/Documentos/UnB/pesquisa/artigos/mezuro-articles/oss-tools-2017/images/mezuro-architecturev3.png"
        inkscape:export-xdpi="113.45"
        inkscape:export-ydpi="113.45" />
   </g>

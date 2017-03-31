@@ -35,17 +35,17 @@
 with its source code quality.
   % Problema
   However, its analysis has issues like, for instance, the definition of which
-metrics to use and how to interpret the measured results. Furthermore, this practice
-is still not common on industry development workflow. Those who decide to employ
-source code analysis lack free software alternatives that integrate multiple languages
-and tools.
+metrics to use and how to interpret the measured results. Furthermore, this
+practice is still not common on industry development workflow. Those who decide
+to employ source code analysis lack free software alternatives that integrate
+multiple languages and tools.
 % Soluções propostas
-In this work we present Mezuro: a FOSS web-based platform to collaboratively analyze
-source code. The project provides ways to compare projects and share knowledge
-about metrics, teaching how to configure and interpret them. The platform was
-planned to integrate multiple metric collectors for several programming
-languages, and, currently, allows analysis of source code written in C, C++,
-Java, Ruby, PHP, and Python.
+In this work we present Mezuro: a FOSS web-based platform to collaboratively
+analyze source code. The project provides ways to compare projects and share
+knowledge about metrics, teaching how to configure and interpret them. The
+platform was planned to integrate multiple metric collectors for several
+programming languages, and, currently, allows analysis of source code written
+in C, C++, Java, Ruby, PHP, and Python.
   % Frase de impacto
     With this project we expect to spread knowledge and encourage the use of
 code metrics by the free software developer community.
@@ -56,19 +56,19 @@ code metrics by the free software developer community.
 \section{Introduction}
 \label{sec:intro}
 
-Static source code metrics are measures extracted from the code without compiling
-or running it. For example, these metrics provide information about complexity, comprehension,
-testability, maintainability, and evolution of code \cite{mills1988}. Source code metrics can help software engineers to
-observe and determine source code quality, supporting the development of clean code (i.e., clear, flexible, and simple) as well\cite{martin2008}.
+Static source code metrics are measures extracted from the code without
+compiling or running it. For example, these metrics provide information about
+complexity, comprehension, testability, maintainability, and evolution of code,
+supporting software engineers to observe and determine source code
+quality\cite{mills1988}.
 
-Nowadays, several tools can be
-used to extract source code metrics, such as
-pylint\footnote{\url{https://www.pylint.org/}} (Python),
-metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
-Analizo (C/C++ and Java)\cite{terceiro2010analizo}, each one with
-different levels of usability, definitions and set of metrics, being necessary
-the creation of a platform that brings and present these results to the end
-user, specially in tracking the software during its life cycle.
+Nowadays, several tools can be used to extract source code metrics, such as
+pylint\footnote{\url{pylint.org}} (Python),
+metric\_fu\footnote{\url{github.com/metricfu/metric_fu}} (Ruby), and
+Analizo (C/C++ and Java)\cite{terceiro2010analizo}, each one with different
+levels of usability, definitions and set of metrics, being necessary the
+creation of a platform that brings and present these results to the end user,
+specially in tracking the software during its life cycle.
 
 Code metric tools, in general, do not present a friendly interface, and,
 even more, do not follow a standard. Therefore, this work present the
@@ -81,16 +81,16 @@ Mezuro platform, which (i) provides an single interface grouping available tools
 \section{Related tools}
 
 There are two tools related to Mezuro. The first,
-SonarQube\footnote{\url{https://www.sonarqube.org/}},
-is a FOSS software licensed as LGPLv3, and offers a platform to manage software
-quality by using plugins through a 
-library\footnote{\url{https://docs.sonarqube.org/display/PLUG/Plugin+Library}}.
+SonarQube\footnote{\url{sonarqube.org}}, is a FOSS software
+licensed as LGPLv3, and offers a platform to manage software quality by using
+plugins through a
+library\footnote{\url{docs.sonarqube.org/display/PLUG/Plugin+Library}}.
 At its most basic version it classifies code problems and evaluate simple
 coverage metrics and technical debts in several languages. However, its best
-plugins are paid and closed source, such as the
-C/C++ analyzer\footnote{\url{https://www.sonarsource.com/why-us/products/codeanalyzers/sonarcfamilyforcpp.html}}.
+plugins are paid and closed source, such as the C/C++
+analyzer\footnote{\url{sonarsource.com/why-us/products/codeanalyzers/sonarcfamilyforcpp.html}}.
 
-The second, Code Climate\footnote{\url{https://codeclimate.com/}}, is a tool
+The second, Code Climate\footnote{\url{codeclimate.com}} is a tool
 that analysis source code hosted in a Git server, and has support for several
 programming languages and frameworks. The analysis will look for code smells
 in the code and classify them based on aspects such as size of methods and
@@ -101,49 +101,56 @@ the given scenario. Such as SonarQube, Code Climate is FOSS, but without its
 polished front-end, which makes Mezuro still the only complete FOSS alternative.
 
 Mezuro, idealized as a code metrics platform, has the differential to
-continuous generate reviews about the project: the user schedule the
-analysis and follows scores evolution over time. Results of each analysis
-are public, what allows greater transparency between the developer and the
-community that uses the software. Thereby, they can decide if the given solution
-meets the requirements and if they should trust in the quality of the software.
+continuous generate reviews about the project: the user schedule the analysis
+and follows scores evolution over time. Results of each analysis are public,
+what allows greater transparency between the developer and the community that
+uses the software. Thereby, they can decide if the given solution meets the
+requirements and if they should trust in the quality of the software.
 
 \section{The Mezuro project}
 \label{sec:mezuro}
 
-Mezuro is composed of three parts: the configuration prior to the analysis beginning;
-processing and evaluation of source code metrics; and a graphic interface to
-present results. Nowadays, the processing module is Kalibro and the visualization
-Prezento, Mezuro being so the set of these projects, that is, Kalibro integrated
-with Prezento.
+Mezuro is composed of three parts: the configuration prior to the analysis
+beginning; processing and evaluation of source code metrics; and a graphic
+interface to present results. Nowadays, the processing module is Kalibro and
+the visualization Prezento, Mezuro being so the set of these projects, that is,
+Kalibro integrated with Prezento.
 
 Since its first implementation in 2010\cite{mezuro2012}, until being completely
-rewritten, the architecture of the system evolved adopting the microservice architecture\cite{namiot2014micro},
-to (i) minimize the amount of code to maintain;
-(ii) test and grant quality of code;
-(iii) modularize the application in several independent services.
+rewritten, the Mezuro architecture of the system evolved adopting the
+microservice architecture\cite{namiot2014micro}, to (i) minimize the amount of
+code to maintain; (ii) test and grant quality of code; (iii) modularize the
+application in several independent services.
 
 \begin{figure}[hbt]
   \centering
-    \includegraphics[width=\textwidth]{images/mezuro-architecturev3.png}
-  \caption{Current architecture of the system.}
+    \includegraphics[width=.8\linewidth]{images/mezuro-architecturev3.png}
+  \caption{Current Mezuro architecture.}
   \label{fig:architecture-2}
 \end{figure}
 
-%TODO Dylan: Possivelmente essa figura não é mais do estado atual - ver com o Manzo e Diego.
 
-The current Mezuro state is specified on Figure \ref{fig:architecture-2}. Ellipses represents
-softwares involved and parallelograms the communication interfaces between them. At Mezuro's
-base we have Kalibro, segmented in three smaller entities: Kalibro Processor, responsible for
-processing and evaluating metrics;
-Kalibro Configurations, responsible for metrics definitions and configurations;
-and Kalibro Client, responsible for interoperate communications between these entities. 
-Prezento, the presentation layer, will mainly communicate with Kalibro Processor and
-Kalibro Configurations, via the Kalibro Client interface.
+The current Mezuro state is specified in Figure \ref{fig:architecture-2}.
+Ellipses represents softwares involved and parallelograms the communication
+interfaces between them. At Mezuro base we have Kalibro, segmented in three
+smaller entities: Kalibro Processor, responsible for processing and evaluating
+metrics; Kalibro Configurations, responsible for metrics definitions and
+configurations; and Kalibro Client, responsible for interoperate communications
+between these entities.  Prezento, the presentation layer, mainly communicates
+with Kalibro Processor and Kalibro Configurations, via the Kalibro Client
+interface.
+
+\begin{figure}[hbt]
+  \centering
+    \includegraphics[width=.9\linewidth]{images/new-repository-results.png}
+  \caption{Code analysis feature.}
+  \label{fig:feature-1}
+\end{figure}
 
 Mezuro features can be divided in two groups:
 
 \begin{itemize}
-    \item Project
+    \item Project (Figure \ref{fig:feature-1})
 
     \begin{itemize}
         \item Download of source code via repositories (Git, Subversion, Bazaar etc) or via compressed file;
@@ -162,41 +169,22 @@ Mezuro features can be divided in two groups:
     \end{itemize}
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \begin{minipage}{.5\textwidth}
-        \centering
-        \includegraphics[width=.9\linewidth]{images/mezuro-feature1.png}
-        % \caption{Feature 1}
-        \captionof{figure}{Code analysis feature.}
-        \label{fig:feature-1}
-    \end{minipage}%
-    \begin{minipage}{.5\textwidth}
-        \centering
-        \includegraphics[width=.9\linewidth]{images/mezuro-feature2.png}
-        \captionof{figure}{Configuration creation feature.}
-        \label{fig:feature-2}
-    \end{minipage}
-\end{figure}
-
-%TODO Dylan: Adicionar duas imagens do Mezuro, a lado a lado
-
-Mezuro has also a strong learning aspect, in which participants can observe other
-projects, or clone their configurations and definitions, to learn with them.
-This open mutual interaction can be interesting to project managers, software
-auditors and even an entire developer team. The final goal is to create a
-community that see value in such methodologies and how this can contribute
-to the success of their projects.
+Mezuro has also a strong learning aspect, in which participants can observe
+other projects, or clone their configurations and definitions, to learn with
+them.  This open mutual interaction can be interesting to project managers,
+software auditors and even an entire developer team. The final goal is to
+create a community that see value in such methodologies and how this can
+contribute to the success of their projects.
 
 \section{Final remarks}
 
-Mezuro architecture evolution is an answer to the lack of tracking and standardization
-of source code and the necessity to evaluate it, while being free software,
-highly customizable, with support to many programming languages, providing
-a friendly interface, for processing history and also with an extensible
-architecture planned to easily embodying of new features by the FOSS community.
-
-%TODO Paulo: mais coisas ...
+Mezuro architecture evolution is an answer to the lack of tracking and
+standardization of source code analysis. It is a 100\% FOSS, highly
+customizable, with support to many programming languages, providing a friendly
+interface, for processing history and also with an extensible architecture
+planned to easily embodying of new features by the FOSS community. Mezuro
+source code is licensed under AGPLv3 and available at \url{github.com/mezuro},
+as well as, it is in production at \url{mezuro.org}.
 
 \bibliographystyle{splncs03}
 \bibliography{mezuro}
