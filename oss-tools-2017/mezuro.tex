@@ -63,7 +63,7 @@ observe and determine source code quality, supporting the development of clean c
 
 Nowadays, several tools can be
 used to extract source code metrics, such as
-pylint\footnote{\url{http://www.pylint.org/}} (Python),
+pylint\footnote{\url{https://www.pylint.org/}} (Python),
 metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby), and
 Analizo (C/C++ and Java)\cite{terceiro2010analizo}, each one with
 different levels of usability, definitions and set of metrics, being necessary
@@ -80,12 +80,15 @@ Mezuro platform, which (i) provides an single interface grouping available tools
 
 \section{Related tools}
 
-There are two tools related to Mezuro. The first, SonarQube\footnote{\url{http://www.sonarqube.org/}}, is a FOSS software licensed as LGPLv3, and offers a platform to manage software quality by using plugins through a 
-library\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
+There are two tools related to Mezuro. The first,
+SonarQube\footnote{\url{https://www.sonarqube.org/}},
+is a FOSS software licensed as LGPLv3, and offers a platform to manage software
+quality by using plugins through a 
+library\footnote{\url{https://docs.sonarqube.org/display/PLUG/Plugin+Library}}.
 At its most basic version it classifies code problems and evaluate simple
 coverage metrics and technical debts in several languages. However, its best
 plugins are paid and closed source, such as the
-C/C++ analyzer\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
+C/C++ analyzer\footnote{\url{https://www.sonarsource.com/why-us/products/codeanalyzers/sonarcfamilyforcpp.html}}.
 
 The second, Code Climate\footnote{\url{https://codeclimate.com/}}, is a tool
 that analysis source code hosted in a Git server, and has support for several
@@ -94,7 +97,8 @@ in the code and classify them based on aspects such as size of methods and
 code duplication. Lastly, based on the score of its parts, the given project
 will receive a grade between A and F. Keep in mind that what is tagged as an
 issue sometimes is not a real problem, since it could be the best solution for
-the given scenario.
+the given scenario. Such as SonarQube, Code Climate is FOSS, but without its
+polished front-end, which makes Mezuro still the only complete FOSS alternative.
 
 Mezuro, idealized as a code metrics platform, has the differential to
 continuous generate reviews about the project: the user schedule the
@@ -129,7 +133,12 @@ to (i) minimize the amount of code to maintain;
 
 The current Mezuro state is specified on Figure \ref{fig:architecture-2}. Ellipses represents
 softwares involved and parallelograms the communication interfaces between them. At Mezuro's
-base we have Kalibro, segmented in three smaller entities (...).
+base we have Kalibro, segmented in three smaller entities: Kalibro Processor, responsible for
+processing and evaluating metrics;
+Kalibro Configurations, responsible for metrics definitions and configurations;
+and Kalibro Client, responsible for interoperate communications between these entities. 
+Prezento, the presentation layer, will mainly communicate with Kalibro Processor and
+Kalibro Configurations, via the Kalibro Client interface.
 
 Mezuro features can be divided in two groups:
 
@@ -172,9 +181,9 @@ Mezuro features can be divided in two groups:
 
 %TODO Dylan: Adicionar duas imagens do Mezuro, a lado a lado
 
-Mezuro has a social network shape, in which participants can observe other
-projects, or clone their configurations and definitions. This open mutual
-interaction can be interesting to project managers, software
+Mezuro has also a strong learning aspect, in which participants can observe other
+projects, or clone their configurations and definitions, to learn with them.
+This open mutual interaction can be interesting to project managers, software
 auditors and even an entire developer team. The final goal is to create a
 community that see value in such methodologies and how this can contribute
 to the success of their projects.
