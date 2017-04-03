@@ -14,7 +14,7 @@
 
 \begin{document}
 \sloppy
-\title{Mezuro: Understading source code metrics}
+\title{Mezuro: Understading source code metrics} % só remover o understanding?
 
 \author{Dylan Guedes\inst{1}, Paulo Meirelles\inst{1,2},
         Rafael Manzo\inst{2}, Diego Camarinha\inst{2}}
@@ -32,22 +32,22 @@
 \begin{abstract}
   % Contexto
   The ease of development and maintenance of a software is directly related
-with its source code quality.
+with its quality.
   % Problema
-  However, its analysis has issues like, for instance, the definition of which
-metrics to use and how to interpret the measured results. Furthermore, this
-practice is still not common on industry development workflow. Those who decide
-to employ source code analysis lack free software alternatives that integrate
-multiple languages and tools.
+  However, its source code analysis has issues, such as, the definition of
+which metrics to use and how to interpret the results. Furthermore, this
+practice is still not common on industry development workflow. Those who % não removi o _on_
+decide to employ source code analysis lack free software alternatives that
+integrate multiple languages and tools.
 % Soluções propostas
-In this work we present Mezuro: a FOSS web-based platform to collaboratively
+  In this work we present Mezuro: a FOSS web-based platform to collaboratively
 analyze source code. The project provides ways to compare projects and share
 knowledge about metrics, teaching how to configure and interpret them. The
 platform was planned to integrate multiple metric collectors for several
 programming languages, and, currently, allows analysis of source code written
 in C, C++, Java, Ruby, PHP, and Python.
   % Frase de impacto
-    With this project we expect to spread knowledge and encourage the use of
+  With this project we aim to spread knowledge and encourage the use of % expect por aim?
 code metrics by the free software developer community.
 
 \textbf{Keywords:} static analysis, source code metrics, open source software.
@@ -62,17 +62,18 @@ complexity, comprehension, testability, maintainability, and evolution of code,
 supporting software engineers to observe and determine source code
 quality\cite{mills1988}.
 
-Nowadays, several tools can be used to extract source code metrics, such as
+Nowadays, several tools are used to extract source code metrics, such as
 pylint\footnote{\url{pylint.org}} (Python),
 metric\_fu\footnote{\url{github.com/metricfu/metric_fu}} (Ruby), and
 Analizo (C/C++ and Java)\cite{terceiro2010analizo}, each one with different
 levels of usability, definitions and set of metrics, being necessary the
 creation of a platform that brings and present these results to the end user,
-specially in tracking the software during its life cycle.
+specially in tracking the software quality during its life cycle. Code metric
+tools, in general, do not present a friendly interface, and, even more, do not
+follow a standard.
 
-Code metric tools, in general, do not present a friendly interface, and,
-even more, do not follow a standard. Therefore, this work present the
-Mezuro platform, which (i) provides an single interface grouping available tools;
+Therefore, this work present the Mezuro platform, which (i) provides a single
+interface grouping available tools;
 (ii) allows selection and composition of metrics in a flexible manner;
 (iii) preserves the evolution history;
 (iv) presents results in a friendly way;
@@ -86,41 +87,42 @@ licensed as LGPLv3, and offers a platform to manage software quality by using
 plugins through a
 library\footnote{\url{docs.sonarqube.org/display/PLUG/Plugin+Library}}.
 At its most basic version it classifies code problems and evaluate simple
-coverage metrics and technical debts in several languages. However, its best
-plugins are paid and closed source, such as the C/C++
+coverage metrics in several languages. However, its best plugins are paid and
+closed source, such as the C/C++
 analyzer\footnote{\url{sonarsource.com/why-us/products/codeanalyzers/sonarcfamilyforcpp.html}}.
 
 The second, Code Climate\footnote{\url{codeclimate.com}} is a tool
 that analysis source code hosted in a Git server, and has support for several
 programming languages and frameworks. The analysis will look for code smells
 in the code and classify them based on aspects such as size of methods and
-code duplication. Lastly, based on the score of its parts, the given project
-will receive a grade between A and F. Keep in mind that what is tagged as an
-issue sometimes is not a real problem, since it could be the best solution for
+code duplication. Lastly, based on the score of its parts, the given project % mantive o lastly
+will receive a grade ranging from A to F. Keep in mind that what is tagged as an
+issue sometimes might not be a real problem, since it could be the best solution for % não troquei _issue_ por _smell_, avaliar
 the given scenario. Such as SonarQube, Code Climate is FOSS, but without its
 polished front-end, which makes Mezuro still the only complete FOSS alternative.
+% pra mim ficou que o codeclimate FOSS não tem frontend, talvez a confusão seja o "polished"?
 
 Mezuro, idealized as a code metrics platform, has the differential to
-continuous generate reviews about the project: the user schedule the analysis
-and follows scores evolution over time. Results of each analysis are public,
+continuous generate reviews about the project: the user schedule the analysis % mantive o _continuous_, porque o mezuro escalona avaliações periódicas
+and follows scores evolution over time. Results of each analysis are public, % mantive _scores_.
 what allows greater transparency between the developer and the community that
-uses the software. Thereby, they can decide if the given solution meets the
-requirements and if they should trust in the quality of the software.
+uses the software. Thereby, users can decide if the given solution meets the
+quality requirements and if they should trust in the quality of the software.
 
 \section{The Mezuro project}
 \label{sec:mezuro}
 
-Mezuro is composed of three parts: the configuration prior to the analysis
-beginning; processing and evaluation of source code metrics; and a graphic
-interface to present results. Nowadays, the processing module is Kalibro and
-the visualization Prezento, Mezuro being so the set of these projects, that is,
-Kalibro integrated with Prezento.
-
 Since its first implementation in 2010\cite{mezuro2012}, until being completely
-rewritten, the Mezuro architecture of the system evolved adopting the
+rewritten in 2013, the Mezuro architecture of the system evolved adopting the
 microservice architecture\cite{namiot2014micro}, to (i) minimize the amount of
 code to maintain; (ii) test and grant quality of code; (iii) modularize the
 application in several independent services.
+
+Mezuro is composed of three parts: the configuration prior to the analysis;
+processing and evaluation of source code metrics; and a graphic
+interface to present results. Currently, the processing module is Kalibro and
+the visualization Prezento, Mezuro being so the set of these projects, that is,
+Kalibro integrated with Prezento.
 
 \begin{figure}[hbt]
   \centering
@@ -128,7 +130,6 @@ application in several independent services.
   \caption{Current Mezuro architecture.}
   \label{fig:architecture-2}
 \end{figure}
-
 
 The current Mezuro state is specified in Figure \ref{fig:architecture-2}.
 Ellipses represents softwares involved and parallelograms the communication
@@ -153,28 +154,27 @@ Mezuro features can be divided in two groups:
     \item Project (Figure \ref{fig:feature-1})
 
     \begin{itemize}
-        \item Download of source code via repositories (Git, Subversion, Bazaar etc) or via compressed file;
-        \item Scheduling of code processing (1 day, 2 days, weekly, biweekly, and monthly);
+        \item Upload of source code via repositories (Git, Subversion, Bazaar etc) or via compressed file;
+        \item Code process scheduling (1 day, 2 days, weekly, biweekly, and monthly);
         \item Definition of what metric configuration should be used for each file;
-        \item Graphical analysis of each file via dotted plot with scores over time;
+        \item Graphical analysis of each file via dotted plot with scores over time; % concordo que precisa mudar, mas acho que a sugestão dada ainda não soa tão bem.
         \item Public results that are accessible by the community.
     \end{itemize}
     \item Configuration
     \begin{itemize}
-        \item Configuration cloning and creation;
+        \item Metric configuration cloning and creation;
         \item Statistics about most popular configurations in the community;
         \item Creation of qualitative ranges associated with values of metrics;
-        \item Creation of reading groups to be used in textual interpretation of metrics results;
         \item Combination of native metrics to create composed and more complex analysis.
     \end{itemize}
 \end{itemize}
 
-Mezuro has also a strong learning aspect, in which participants can observe
-other projects, or clone their configurations and definitions, to learn with
-them.  This open mutual interaction can be interesting to project managers,
-software auditors and even an entire developer team. The final goal is to
-create a community that see value in such methodologies and how this can
-contribute to the success of their projects.
+Mezuro has also a strong learning aspect, in which participants are able to
+observe other projects, or clone their configurations and definitions, to
+learn with them.  This open mutual interaction is interesting to project
+managers, software auditors and even an entire developer team. The final goal
+is to create a community that see value in such methodologies and feel
+comfortable to use them in their daily projects.
 
 \section{Final remarks}
 
