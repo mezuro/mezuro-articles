@@ -1,0 +1,29 @@
+\section{Introduction}
+\label{sec:intro}
+
+Static source code metrics are measures extracted from the code without
+compiling or running it. For example, these metrics provide information about
+complexity, comprehension, testability, maintainability, and evolution of code,
+supporting software engineers to observe and determine source code
+quality\cite{mills1988}.
+
+Nowadays, several tools propose to extract source code metrics, such as
+pylint\footnote{\url{pylint.org}} (Python),
+metric\_fu\footnote{\url{github.com/metricfu/metric_fu}} (Ruby), and Analizo
+(C/C++ and Java)\cite{terceiro2010analizo}, each one with different levels of
+usability, definitions, and set of metrics.
+%
+In general, source code metric tools also do not present a friendly way to
+interpret its results and, even more, do not follow a standardization between
+them.
+
+In this context, we create a platform that brings and presents these results to
+the end user, specially, by analyzing source code metric history during its
+life cycle.
+%
+This work presents the Mezuro platform which (i) provides a single interface
+grouping available tools; (ii) allows selection and composition of metrics in a
+flexible manner; (iii) stores the metrics evolution history; (iv) presents
+results in a friendly way; (v) allows users to customize the given
+interpretation accordingly to their own context.
+

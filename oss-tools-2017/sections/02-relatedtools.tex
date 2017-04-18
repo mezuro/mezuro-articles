@@ -1,0 +1,31 @@
+\section{Related tools}
+
+There are two tools related to Mezuro: SonarQube\footnote{\url{sonarqube.org}}
+and Code Climate\footnote{\url{codeclimate.com}}. SonarQube offers a platform
+to manage software quality by using plugins through a
+library\footnote{\url{docs.sonarqube.org/display/PLUG/Plugin+Library}}.
+%
+At its most basic version, it classifies code problems and evaluates simple
+coverage metrics in several languages. SonarQube core is licensed as LGPLv3,
+however, its best plugins are paid and proprietary, such as the C/C++
+analyzer\footnote{\url{sonarsource.com/why-us/products/codeanalyzers/sonarcfamilyforcpp.html}}.
+
+Code Climate is a tool that analyzes source code hosted in a Git server, and it
+has support for several programming languages and frameworks. The analysis
+looks for code smells in the code and classifies them based on aspects such as
+size of methods and code duplication. Based on the smells that the tool
+identifies, the project under analysis will receive a grade ranging from A to
+F. Keep in mind that what is tagged as a code smell sometimes might not be a
+real problem, since it could be the best solution for the given scenario.
+
+Such as SonarQube, Code Climate also is not fully FOSS and, therefore, Mezuro
+still is the only complete FOSS alternative to monitor source code metrics.
+%
+Mezuro has the differential to continuously generate reviews about the project:
+the user schedules the analysis and follows metric results evolution over time.
+Results of each analysis are public, what allows greater transparency between
+the developer and the community that uses the software. Thereby, the
+maintainers can decide if the given solution meets the source code quality
+requirements. Another example, the community already knows the project
+functionally and, in a good scenario where there are more than one project with
+the same functionalities, the maintainers choose the one with the best metrics.
