@@ -4,22 +4,34 @@
 Mezuro features can be divided in two groups:
 
 \begin{itemize}
-    \item Project
-
+    \item Project features
     \begin{itemize}
-        \item Obtain (download and upload) the source code via repositories (Git, Subversion, and Bazaar) or via compressed file;
-        \item Code process scheduling (1 day, 2 days, weekly, biweekly, and monthly);
-        \item Selection of the metric configuration should be used for each project;
-        \item Visualization of measurement results per file via plot graphics with values over-time;
+        \item Obtain (download and upload) and evaluate source code from
+            several SCM tools repositories (currently Git, Subversion, and
+            Bazaar), or from compressed file;
+        \item Code process schedule with results preservation, not forcing
+            users to manually evaluation from time to time. Currently,
+            allowing 1 day, 2 days, weekly, and biweekly scheduling;
+        \item Use of multiple metrics configurations for multiple projects;
+        \item Visualization of measurement results per file via plot graphics
+            with values over-time;
+        \item Extensible architecture to include new metric collectors;
         \item Public results that are accessible by the community.
     \end{itemize}
-    \item Configuration
+
+    \item Configuration features
     \begin{itemize}
-        \item Metrics configuration cloning and creation;
-        \item Statistics about most popular configurations in the community;
-        \item Creation of qualitative ranges associated with values of metrics;
-      	\item Creation of ``reading groups'' to be used in textual interpretation of metrics results;
-        \item Combination of native metrics to create composed and more complex analysis.
+        \item Metrics creation, even allowing the definition of formula used to
+            evaluate the source code;
+        \item Metrics configuration cloning, giving users a quick start to rate
+            their projects; and the option to use well established metrics
+            configuration;
+        \item Statistics about most popular configurations in the community,
+            increasing the easiness to decide what configuration to use;
+        \item Creation of qualitative ranges associated with values of metrics,
+            allowing better control of metrics already defined;
+        \item Combination of native metrics to create composed and more complex
+            analysis.
     \end{itemize}
 \end{itemize}
 
