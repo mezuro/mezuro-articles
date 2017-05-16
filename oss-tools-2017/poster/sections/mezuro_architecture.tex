@@ -1,25 +1,35 @@
 \begin{block}{Mezuro Architecture}
+        \begin{figure}
+            \begin{center}
+                \includegraphics[scale=1.5]{figures/MezuroArchitecture.png}
+                \label{fig:architecture}
+            \end{center}
+        \end{figure}
     \begin{itemize}
-        \item Mezuro is composed of three parts: the configuration prior to
-            the analysis; (ii) source code metrics computation and evaluation;
-            (iii) and a graphic interface to present results.
-
+        \item Mezuro is composed of three parts:
+            \begin{itemize}
+                \item Configuration prior to the analysis.
+                \item Source code metrics computation and evaluation.
+                \item A graphic interface to present results.
+            \end{itemize}
         \item Currently, both the computation and visualization modules use
             other tools developed in the Mezuro project: \textbf{Kalibro} and
             \textbf{Prezento}.
 
         \item Mezuro architecture evolved to a microservice architecture, to:
-            minimize the amount of code to maintain; test and grant quality of
-            code; and modularize the application in several independent services.
-
+            \begin{itemize}
+                \item Minimize the amount of code to maintain.
+                \item Test and grant quality of code.
+                \item Modularize the application in several independent services.
+            \end{itemize}
         \item \textbf{Kalibro} is the base of the architecture, and its
             segmented in three smaller entities:
 
             \begin{itemize}
                 \item \textbf{Kalibro Processor}, responsible for processing and
-                    evaluating metrics;
+                    evaluating metrics.
                 \item \textbf{Kalibro Configurations}, responsible for metrics
-                    definitions and configurations;
+                    definitions and configurations.
                 \item \textbf{Kalibro Client}, responsible for interoperate
                     communications between these entities.
             \end{itemize}
@@ -27,12 +37,5 @@
         \item \textbf{Prezento}, the presentation layer, mainly communicates with
             Kalibro Processor and Kalibro Configurations, via the Kalibro
             Client interface.
-        \begin{figure}
-            \begin{center}
-                \includegraphics[scale=1.5]{figures/MezuroArchitecture.png}
-                \caption{Mezuro Architecture.}
-                \label{fig:architecture}
-            \end{center}
-        \end{figure}
     \end{itemize}
 \end{block}
