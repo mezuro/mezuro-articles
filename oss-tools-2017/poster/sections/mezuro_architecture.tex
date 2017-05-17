@@ -8,34 +8,34 @@
     \begin{itemize}
         \item Mezuro is composed of three parts:
             \begin{itemize}
-                \item Configuration prior to the analysis.
-                \item Source code metrics computation and evaluation.
-                \item A graphic interface to present results.
+                \item Configuration prior to the analysis
+                \item Source code metrics computation and evaluation
+                \item A graphic interface to present results
             \end{itemize}
         \item Currently, both the computation and visualization modules use
             other tools developed in the Mezuro project: \textbf{Kalibro} and
-            \textbf{Prezento}.
+            \textbf{Prezento}
 
         \item Mezuro architecture evolved to a microservice architecture, to:
             \begin{itemize}
-                \item Minimize the amount of code to maintain.
-                \item Test and grant quality of code.
-                \item Modularize the application in several independent services.
+                \item Minimize maintainance cost
+                \item Test and grant quality of code
+                \item Require minimal previous knowledge from new contributors
             \end{itemize}
         \item \textbf{Kalibro} is the base of the architecture, and its
             segmented in three smaller entities:
 
             \begin{itemize}
                 \item \textbf{Kalibro Processor}, responsible for processing and
-                    evaluating metrics.
+                    evaluating metrics
                 \item \textbf{Kalibro Configurations}, responsible for metrics
-                    definitions and configurations.
-                \item \textbf{Kalibro Client}, responsible for interoperate
-                    communications between these entities.
+                    definitions and configurations
+                \item \textbf{Kalibro Client}, responsible for all the communication
+                    among the services
             \end{itemize}
 
         \item \textbf{Prezento}, the presentation layer, mainly communicates with
             Kalibro Processor and Kalibro Configurations, via the Kalibro
-            Client interface.
+            Client interface
     \end{itemize}
 \end{block}
