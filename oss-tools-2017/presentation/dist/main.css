@@ -766,14 +766,18 @@ a:focus {
 
 .slide {
   color: #231F20;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 .title {
   background-color: #FFF200;
-  color: #463C7D;
+  color: #2E3192;
   padding: 10px;
   border-radius: 5px;
+  position: absolute;
+  top: 0;
+  width: 750px;
+  font-weight: 900;
 }
 
 .first-slide .title {
