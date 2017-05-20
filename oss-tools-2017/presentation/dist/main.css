@@ -789,3 +789,12 @@ p.remark {
   font-size: 21px;
   color: #aaa;
 }
+
+.no-margin-top-or-bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul.tools {
+  font-size: 21px;
+}
