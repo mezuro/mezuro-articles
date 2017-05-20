@@ -1,0 +1,77 @@
+extends ./app/base.pug
+
+block vars
+  -
+    var author = 'Dylan Guedes and Paulo Meirelles and Rafael Manzo and Diego Camarinha';
+    var title = 'Mezuro: Understanding source code metrics';
+
+block slides
+  +slide(class="first-slide")
+    p.title Mezuro: Understanding source code metrics
+    p.authors Dylan Guedes, Paulo Meirelles, Rafael Manzo, and Diego Camarinha
+    center
+      p
+        img(src="OrgLogo.png", style='width: 300px')
+
+
+  +slide('-1000', '-1500')
+    p.title Metric collectors...
+    ul.small
+      li Are not easy to understand
+      li Do not follow a standardization
+
+  +slide()
+    p.title Metric platforms...
+    ul.small
+      li Are not complete FOSS
+      li Are not very configurable
+
+  +slide()
+    p.title What is Mezuro?
+    ul.small
+      li FOSS web-based platform that analyzes source code
+      li Extensible architecture
+
+  +slide()
+    p.title Philosofies
+    ul.small
+      li Help developers and maintainers to understand and feel comfortable using source code metrics
+      li Results are public, and can be used by the community
+      center
+        p
+          img(src="community.png", style='width: 300px')
+
+
+  +slide()
+    p.title Why Mezuro?
+    ul.small
+      li 100% FOSS solution
+      li Continuously generate reviews about a project
+      li More control over metrics
+
+  +slide()
+    p.title Mezuro Architecture
+    ul.small
+      li Composed of two tools:
+      ul
+        li Kalibro, that is segmented in:
+          ul.small
+            li Kalibro Processor
+            li Kalibro Configurations
+            li Kalibro Client
+        li Prezento, the presentation layer
+
+  +slide()
+    p.title Mezuro Architecture
+    center
+      p
+        img(src="architecture.png", style='width: 600px')
+
+  +slide().hide
+    p.title Next Steps
+    ul.small
+      li Front-end enhancement
+      li Improvement of processing elapsed time
+      li Auto-detection of repository language
+      li Migrate code management to Gitlab
+

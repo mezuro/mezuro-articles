@@ -1,0 +1,26 @@
+.authors {
+  font-size: 21px;
+  color: #ccc;
+}
+
+.slide {
+  color: #231F20; 
+  font-family: monospace;
+}
+
+.title {
+  background-color: #FFF200;
+  color: #463C7D;;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.first-slide .title {
+  background-color: #463C7D;
+  color: #FFF200;
+  font-weight: 900;
+}
+
+.first-slide {
+  background-color: #463C7D;
+}
