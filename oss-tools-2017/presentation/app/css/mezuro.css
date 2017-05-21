@@ -1,0 +1,39 @@
+.authors {
+  font-size: 21px;
+}
+
+.slide {
+  font-family: sans-serif;
+}
+
+.title {
+  color: #2E3192;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  width: 750px;
+  font-weight: 900;
+}
+
+.first-slide .title {
+  font-weight: 900;
+}
+
+div.after-title {
+  margin-top: 70px;
+}
+
+p.remark {
+  font-size: 21px;
+  color: #aaa;
+}
+
+.no-margin-top-or-bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul.tools {
+  font-size: 21px;
+}
