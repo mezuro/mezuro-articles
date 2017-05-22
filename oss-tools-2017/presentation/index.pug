@@ -5,76 +5,115 @@ block vars
     var author = 'Dylan Guedes and Paulo Meirelles and Rafael Manzo and Diego Camarinha';
     var title = 'Mezuro: Understanding source code metrics';
 
+
 block slides
-  +slide(class="first-slide")
-    p.title Mezuro: Understanding source code metrics
-    center
-      p
-        img(src="OrgLogo.png", style='width: 300px')
-
-
   +slide('-1000', '-1500')
-    p.title Metric collectors...
-    ul.small
-      li Are not easy to understand
-      li Do not follow a standardization
+    <div class="header-container">
+      <div style='margin-bottom: 0px; display: flex; align-items: center;justify-content: center;'>
+        <div><img src='images/unb.png' style='width: 80px;margin-right: 10px;'></div>
+        <div><p class="small">University of Brasília</p></div>
+      </div>
+      <div style='margin-bottom: 0px; display: flex; align-items: center;justify-content: center;'>
+        <div><img src='images/usp.png' style='width: 80px;margin-right: 10px;'></div>
+        <div><p class="small">University of São Paulo</p></div>
+      </div>
+    </div>
+    <p></p>
+      h1(style='margin-top: -40px; text-align: center; border-bottom: 1px solid;') Mezuro: <br> Understanding source code metrics
+
+    <div class="authors-container">
+      <center>
+        <div><p class="small"> Dylan Guedes, <strong>Paulo Meirelles</strong> (UnB)</p></div>
+        <div><p class="small"> Rafael Manzo, Diego Camarinha (USP)</p></div>
+      </center>
+
+      <div style='margin-bottom: 0px; margin-top: 10px; display: flex; align-items: center; justify-content: space-around'>
+        <div><img src='images/lappis.png' style='height: 75px;'></div>
+        <div><img src='images/ime.png' style='height: 75px;'></div>
+      </div>
+    </div>
 
   +slide()
-    p.title Metric platforms...
-    ul.small
-      li Are not complete FOSS
-      li Are not very configurable
+    h1 Internal Quality...
+    p The ease of development and maintenance of a software is directly related with its source code quality.
 
   +slide()
-    p.title What is Mezuro?
-    ul.small
-      li FOSS web-based platform that analyzes source code
-      li Extensible architecture
+    h1 We can use source code metrics...
+    p Static source code metrics are measures extracted from the code without compiling or running it.
 
   +slide()
-    p.title Philosofies
+    h1 Several tools can be used to extract source code metrics...
     ul.small
-      li Help developers and maintainers to understand and feel comfortable using source code metrics
-      li Results are public, and can be used by the community
+      li metric_fu (Ruby)
+      li Radon (Python)
+      li Analizo (Java, C and C++)
+
+  +slide()
+    h1 What is the problem?
+    p Code metric tools, in general, do not present a friendly interface, and, even more, do not follow a standard.
+
+  +step('0', '0', '4')#title
+    span.try we are working on <sup>*</sup>
+    h1 mezuro<sup>*</sup>
+    br
+    span.footnote <sup>*</sup>since 2009...
+    br
+    span.footnote <sup>*</sup>a web-based platform to collaboratively analyze source code.
+    br
+
+  +step('850', '3000', '5', {rotate: 90})#try
+    p What we want?
+    ul.small
+      li Help developers to understand and feel comfortable using source code metrics
+      li Results are public and the "interpretation" is shared by the community
       center
         p
-          img(src="community.png", style='width: 300px')
+          img(src="images/community.png", style='width: 300px')
 
-  +slide()
-    p.title Why Mezuro?
-    ul.small
-      li 100% FOSS solution
-      li Continuously generate reviews about a project
-      li More control over metrics
-
-  +slide()
-    p.title example: New Metric Configuration
-    p.remark * Configuration clone is a way to quick start Mezuro usage
-    center.no-margin-top-or-bottom
-      p
-        img(src="Metric1.png")
-
-  +slide()
-    p.title Mezuro Architecture
-    center.no-margin-top-or-bottom
-      img(src="MezuroTools.png", style='width: 500px')
-    ul.small.tools
-      li Composed of two tools:
-      ul
-        li Kalibro, that is segmented in Kalibro Processor, Kalibro Configurations, and Kalibro Client
-        li Prezento, the presentation layer
-
-  +slide()
-    p.title Mezuro Architecture
+  +step('3500', '8100', '5', {rotate: 90})
+    p.center http://mezuro.org
     center
       p
-        img(src="architecture.png", style='width: 600px')
+        img(src="images/MezuroHome.png", style='width: 1024px')
+
+  +slide('2825', '2325', '1', {rotate: '180', z: -3000}).hide
+    p.center Creating a Mezuro project...
+    p
+        img(src="images/new-repository.png", style='width: 700px')
 
   +slide().hide
-    p.title Next Steps
+    p
+        img(src="images/new-repository-results.png", style='width: 800px')
+
+  +slide().hide
+    p.center Configuring thresholds and interpretation...
+    p
+        img(src="images/MetricConfiguration.png", style='width: 800px')
+
+  +slide().hide
+    p.center Before, we choose a metric collector...
+    p.center
+        img(src="images/Basetool.png", style='width: 600px')
+
+  +slide('2825', '2325', '1', {rotate: '180', z: -3000}).hide
+    p.center Our Architecture
+    p
+      img(src="images/architecture.png", style='width: 600px')
+    span(style="font-size: 0.5em").left
+      <sup>*</sup>Ellipses represents softwares involved
+
+    p(style="font-size: 0.5em").right
+      <sup>*</sup>parallelograms the communication interfaces between them
+
+  +slide().hide
+    h1 Other platforms
     ul.small
-      li Front-end enhancement
-      li Improvement of processing elapsed time
-      li Auto-detection of repository language
-      li Migrate code management to Gitlab
+      li SonarQube: its best plugins are paid and closed source, such as the C/C++ analyzer 
+      li CodeClimate: its polished front-end is not FOSS
+
+  #source.step(data-x='6300', data-y='2500', data-rotate='20', data-scale='4')
+    p(style="margin-bottom: 0.8em") want to know more?
+    q
+      a(href='https://github.com/mezuro') Through the source, things you will see...
+    p(style="font-size: .75em; text-align: center; top: 1em; position: relative;") -it is AGPLv3
 
